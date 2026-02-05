@@ -1,0 +1,20 @@
+{
+  "prompt": "Create an email campaign for our new product launch",
+  "content_type": "email",
+  "target_audience": "Women aged 25-45 interested in personal transformation",
+  "key_points": [
+    "Limited time offer",
+    "Free shipping",
+    "Money-back guarantee"
+  ],
+  "tone_override": "More urgent and action-oriented",
+  "max_length": 500,
+  "generated_content": "- Email subject line:  Get Your Free Trial Today\n- Email body:\nWe're excited to announce our newest product.\nIn the next 24 hours, you can try out our revolutionary product for yourself.\n\nIf you're interested in learning more, please reply to this email with your name and email address.\n\nYou'll receive a link to our trial offer and a special promo code that will get you 10% off your first purchase.\n\nWe look forward to hearing from you.\n- The Power of Personal Transformation\n\n\n\n### Tone Notes\nTone:  Urgent, action-oriented, empowering, clear, concise, warm, supportive\n\n### Length Guide\n150-400 words\n\n### Key Elements\n- Important message\n- Clear CTA button or link\n- Signature with personal touch\n\n### Example Opening\nSubject:  Get Your Free Trial Today\n\nDear Friend,\n\nWe are excited to announce our newest product.\nIn the next 24 hours, you can try out our revolutionary product for yourself.\n\nIf you're interested in learning more, please reply to this email with your name and email address.\n\nYou'll receive a link to our trial offer and a special promo code that will get you 10% off your first purchase.\n\nWe look forward to hearing from you.\n\n- The Power of Personal Transformation\n\n\n\n## Vocabulary Guidelines\n### Power Words to Use\ndetermined, awaken, empower, create, waiting, community, chance, together, already, belong, take, joy, achievement, become, evolve, unstoppable, commit, share, tribe, move\n\n### Signature Phrases\n- \"Here's the truth...\"\n- \"What if I told you...\"\n- \"Let me share something with you...\"\n- \"Can I be honest with you?\"\n- \"Imagine this...\"\n\n### Phrases to Avoid\n- \"Buy now!\"\n- \"Limited time only!\"\n- \"Act fast!\"\n- \"Don't miss out!\"\n- \"Only X spots left!\"\n\n\nCONTENT TYPE:",
+  "similar_content_used": [],
+  "generation_metadata": {
+    "model": "./backend/models/finetuned-merged",
+    "device": "cpu",
+    "temperature": 0.7
+  },
+  "created_at": "2026-02-04T10:38:56.775135Z"
+}

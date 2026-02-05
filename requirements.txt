@@ -1,0 +1,33 @@
+# =============================================================================
+# Marketing Assistant AI - Dependencies
+# =============================================================================
+# Cohere API key is required for embeddings and re-ranking
+# =============================================================================
+
+# Web Framework
+fastapi
+uvicorn[standard]
+
+# Data Validation
+pydantic>=2.0
+pydantic-settings
+
+# Vector Database
+faiss-cpu
+
+# NumPy
+numpy
+
+# AI/ML
+cohere
+transformers
+torch
+
+# Utilities
+python-dotenv
+typing-extensions
+requests
+
+# Testing
+pytest
+httpx
