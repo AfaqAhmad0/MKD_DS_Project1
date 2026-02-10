@@ -271,7 +271,10 @@ class TestTrainingDataEndpoints:
             "/api/v1/training-data",
             json={
                 "title": "Launch Email",
-                "content": "We are live.",
+                "content": (
+                    "We are live! Join us for the launch event and get early "
+                    "access to the offer designed for new subscribers."
+                ),
                 "content_type": "email",
             },
         )

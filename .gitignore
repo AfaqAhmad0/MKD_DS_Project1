@@ -8,8 +8,6 @@
 # Environment & Secrets
 # -----------------------------------------------------------------------------
 # CRITICAL: Never commit API keys or sensitive configuration
-.env
-.env.local
 .env.*.local
 *.pem
 *.key
@@ -76,7 +74,6 @@ env/
 # IDE & Editor
 # -----------------------------------------------------------------------------
 # VS Code
-.vscode/
 *.code-workspace
 
 # PyCharm
@@ -139,3 +136,5 @@ Desktop.ini
 # -----------------------------------------------------------------------------
 *.log
 logs/
+config.bat
+node_modules
