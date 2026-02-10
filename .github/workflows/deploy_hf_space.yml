@@ -32,5 +32,5 @@ jobs:
           git remote add hf "https://user:${HF_SPACE_TOKEN}@huggingface.co/spaces/${HF_SPACE_REPO}"
           git fetch hf
           git rebase hf/main
-          git push hf HEAD:main
+          git push hf HEAD:main --force
 
