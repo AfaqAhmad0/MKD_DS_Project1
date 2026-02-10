@@ -1,0 +1,34 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.repository_owner != 'actions'
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Push to Hugging Face Space
+        env:
+          HF_SPACE_TOKEN: ${{ secrets.HF_SPACE_TOKEN }}
+          HF_SPACE_REPO: ${{ secrets.HF_SPACE_REPO }}
+        run: |
+          if [ -z "$HF_SPACE_TOKEN" ] || [ -z "$HF_SPACE_REPO" ]; then
+            echo "HF_SPACE_TOKEN or HF_SPACE_REPO secret is missing."
+            echo "Set them in GitHub repo → Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          git remote add hf "https://user:${HF_SPACE_TOKEN}@huggingface.co/spaces/${HF_SPACE_REPO}"
+          git push hf HEAD:main
+
