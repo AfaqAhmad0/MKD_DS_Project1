@@ -1,3 +1,15 @@
+---
+title: Marketing Assistant AI
+emoji: 💻
+colorFrom: yellow
+colorTo: yellow
+sdk: docker
+sdk_version: 6.5.1
+app_file: app.py
+pinned: false
+short_description: marketing-assistant-ai
+---
+
 # Marketing Assistant AI
 
 AI-powered marketing copy generation aligned with Adriana James' brand voice. **Cohere API key required** for embeddings and re-ranking.
